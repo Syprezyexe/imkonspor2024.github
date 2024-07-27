@@ -1,0 +1,188 @@
+/* style.css */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+}
+
+nav {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #f00;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.container {
+    margin-top: 10px;
+    background-color: #111;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    position: relative;
+    color: transparent;
+    background: linear-gradient(90deg, #f00, #fff, #f00);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: colorShift 5s linear infinite;
+}
+
+.container p {
+    font-size: 20px;
+    color: #ddd;
+}
+
+.hero-image {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    animation: fadeIn 3s ease-in-out;
+}
+
+.audio-control {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.audio-control button {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.audio-control button:hover {
+    background-color: #c00;
+    transform: scale(1.1);
+}
+
+.contact-animation {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-animation img.rotating {
+    width: 100px;
+    animation: rotate 5s linear infinite;
+}
+
+.player-card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    width: 200px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.player-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid #f00;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #111;
+    padding: 10px;
+    text-align: center;
+}
+
+.container2 {
+    padding: 20px;
+    text-align: center;
+}
+
+@keyframes colorShift {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.gradient-text {
+    font-size: 36px;
+    color: transparent;
+    background: linear-gradient(90deg, #f00, #fff, #f00);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: gradientShift 5s linear infinite;
+}

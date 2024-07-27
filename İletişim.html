@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İmkon Spor Futbol Kulübü</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="Index.html"><img src="logo.png" alt="Kulüp Logosu"></a>
+    </header>
+    <nav>
+        <a href="Index.html">Ana Sayfa</a>
+        <a href="Oyucular.html">Oyuncular</a>
+        <a href="İletişim.html">İletişim</a>
+    </nav>
+    <div class="container" id="iletisim">
+        <h1>İletişim</h1>
+        <p>Konuma Gerek Yok İsmimizi Söyleyin Onlar Gösterir Elleriyle</p>
+        <div class="contact-animation">
+            <img src="logo.png" alt="Futbol Topu" class="rotating">
+        </div>
+    </div>
+    <div class="audio-control">
+        <button onclick="toggleAudio()">Şarkıyı Aç/Kapat</button>
+    </div>
+    <audio id="background-audio" src="müzik.mp3" autoplay loop></audio>
+    <footer>
+        <p>İmkon Spor Futbol Kulübü © 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
